@@ -1,0 +1,17 @@
+if game.PlaceId 4483381587 == then
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Made By Oxscripts#5191", "Sentinel")
+local player = game.Players.LocalPlayer
+
+local info = Window:NewTab("Information")
+local cred = info:NewSection("Credits")
+
+cred:NewButton("Discord Link", "ButtonInfo", function()
+    setclipboard("https://discord.gg/QdHsNMzBbw")
+end)
+
+cred:NewLabel(" You are logged in as "..player.Name.." ")
+
+local main = Window:NewTab("Main")
+local click = main:NewSection("Coins")
+end
